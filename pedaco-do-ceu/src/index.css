@@ -1,0 +1,15 @@
+:root{
+   --red-bg-color-500: #8F1919;
+   --red-bg-color-800: #2C0000;
+
+
+   --gray-bg-color-200:rgb(30, 29, 29);
+   --gray-bg-color-300:#bcbcbc;
+   --gray-bg-color-500:#898686;
+
+   --white-bg-color-500:#ffff
+}
+
+body,input,button,textarea,h3,p{
+   font-family: "Inter", sans-serif;
+}

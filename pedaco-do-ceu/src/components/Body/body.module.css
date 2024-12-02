@@ -1,0 +1,112 @@
+.container{
+    width: 1278px;
+    height: 1150px;
+    padding: 6rem;
+}
+
+.container h1{
+    color: var(--red-bg-color-500);
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: underline;
+    margin-bottom: 2rem;
+}
+
+
+
+.slide{
+    width: 100%;
+    display: flex;
+    justify-content: center;      /* Centraliza o conteúdo horizontalmente */
+    align-items: center;          /* Centraliza o conteúdo verticalmente */
+    gap: 5rem;
+    margin-bottom: 6rem;
+}
+
+.slide img {
+    width: 600px;
+    height: 300px;
+    object-fit: cover;        /* Mantém a imagem cobrindo o contêiner */
+    object-position: bottom;     /* Alinha a imagem ao topo */
+    border-radius: 8px;
+}
+
+
+
+p {
+    max-width: 600px; /* Define a largura máxima do texto */
+    width: 100%;
+    height: auto;
+    text-align: justify;
+    font-size: 20px;
+    font-weight: 400;
+    color: black;
+}
+
+@media (max-width: 600px) {
+    .container{
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        align-items: center;
+        justify-content: center;
+        margin: 0.25rem;
+    }
+    .container h1{
+        color: var(--red-bg-color-500);
+        font-size: 20px;
+        font-weight: bold;
+        text-decoration: underline;
+        margin: 3rem 1rem 3rem 4rem;
+    }
+    .container h1{
+        color: var(--red-bg-color-500);
+        font-size: 18px;
+        font-weight: bold;
+        text-decoration: underline;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+    }
+
+   
+
+    .slide{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;      /* Empilha os itens verticalmente */
+        justify-content: center;
+        align-items: center;          /* Centraliza os itens */
+        gap: 0.25rem;
+        margin: 1REM;
+    }
+
+   
+
+    .slide img {
+        width: 150px;                  /* Faz a imagem ocupar toda a largura disponível */
+        height: 10%;                 /* Ajusta a altura automaticamente */
+        object-fit: cover;            /* Mantém a imagem cobrindo o contêiner */
+        object-position: center;      /* Centraliza a imagem */
+        border-radius: 8px;
+    }    
+
+    .slide .img2{
+        display: none;
+    }
+
+    .pmobile{
+        display: none;
+    }
+
+
+  
+
+    p {
+        width: 70%;
+        font-size: 12px;
+        margin: 1rem 2rem 3rem 1rem;
+        text-align: justify;
+    }
+
+}

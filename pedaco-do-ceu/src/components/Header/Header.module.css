@@ -1,0 +1,95 @@
+.container {
+    display: flex;               /* Torna o container flexível */
+    justify-content: flex-end;   /* Alinha o conteúdo (o .card) à direita */
+    width: 100%;        
+    padding: 0 20px;             /* Adiciona espaço opcional nas laterais */
+    box-sizing: border-box;      /* Inclui o padding na largura total */
+}
+.User{
+    font-size: 24px;
+    width: 24px;
+    height: 24px;
+    color: var(--red-bg-color-500);
+}
+
+.Bag{
+    font-size: 24px;
+    width: 24px;
+    height: 24px;
+    color: var(--red-bg-color-500);
+}
+
+.List{
+    display: none;
+}
+
+
+.card {
+    justify-content: flex-end;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+a {
+    text-decoration: none;
+    font-size: 20px;
+    color: var(--red-bg-color-500);
+    border: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: var(--gray-bg-color-200);
+}
+
+
+/* Breakpoint para telas pequenas (mobile) */
+@media (max-width: 600px) {  /* sm breakpoint padrão */
+    .container {
+        display: flex;
+        width: 100%;
+        height: 3.75rem;               
+        position: fixed;
+        padding: 1rem;
+        top: 0;
+        left: 0;
+        box-sizing: border-box;
+        align-items: center;
+        background-color: var(--red-bg-color-800);
+        gap: 1rem;
+    } 
+
+    .List {
+        display: flex;
+        font-size: 1rem;
+        width: 1rem;
+        height: 1rem;
+        color: var(--white-bg-color-500);
+        margin-right: auto;  /* Move o elemento para a esquerda */
+    }
+
+    .User{
+        font-size: 1rem;
+        width: 1rem;
+        height: 1rem;
+        color: var(--white-bg-color-500);
+    }
+    
+    .Bag{
+        font-size: 1rem;
+        width: 1rem;
+        height: 1rem;
+        color: var(--white-bg-color-500);
+    }
+
+    .card {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    a {
+        display: none;  /* Esconde o elemento */
+    }
+}

@@ -1,0 +1,41 @@
+body {
+    background-image: url(https://images.unsplash.com/photo-1571997478779-2adcbbe9ab2f?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D); /* Caminho da sua imagem */
+    background-size: cover;                    /* Faz a imagem cobrir toda a tela */
+    background-position: center;               /* Centraliza a imagem */
+    background-attachment: fixed;              /* Faz a imagem ficar fixa enquanto a página rola */
+    width: 100%;
+    height: 100%;                             /* Usa 100% da altura da janela de visualização */
+    margin: 0;                                 /* Remove margens padrão */
+    padding: 0;                                /* Remove padding do body */
+    display: flex;                             /* Usado para centralizar o conteúdo */
+    justify-content: center;                   /* Centraliza o conteúdo horizontalmente */
+    align-items: center;                       /* Centraliza o conteúdo verticalmente */
+    position: sticky;                        /* Necessário para que o pseudo-elemento tenha um contexto de posicionamento */
+}
+
+body::after {
+    height: 100%;                               /* Garante que o pseudo-elemento ocupe toda a altura */
+    width: 100%;                                /* Garante que o pseudo-elemento ocupe toda a largura */
+    content: ''; /* Cria o pseudo-elemento */
+    position: absolute; /* Posiciona o pseudo-elemento sobre o body */
+    top: 0;
+    left: 0;
+    background-color: rgba(240, 234, 234, 0.7); /* Cor com opacidade */
+    pointer-events: none; /* Impede que o overlay interfira nas interações do usuário */
+    z-index: -1; /* Coloca o pseudo-elemento atrás de outros elementos */
+}
+
+@media (max-width: 600px) {
+    body {
+        background-image: url(https://images.unsplash.com/photo-1571997478779-2adcbbe9ab2f?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D); /* Caminho da sua imagem */
+        padding:0;
+        margin:-1rem;
+        background-size: 100% 100% ;  /* Ajusta a imagem para cobrir completamente a tela, sem distorção */
+    }
+
+    body::after {
+        background-color: rgba(240, 234, 234, 0.7); /* Cor com opacidade */
+       width: 107%;
+       right: 0px;
+    }
+}
