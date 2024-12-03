@@ -1,5 +1,6 @@
 import styles from './Cards.module.css'
 
+
 export function Cards () {
     return(
         <>  <div className={styles.template}>
@@ -32,11 +33,7 @@ export function Cards () {
                 </h3>
                 <div className={styles.footer}> <a href=''>A Partir de R$ 49,99</a></div>
             </div>
-            </div>
-
-          
-            
-
+            </div>     
         </>
     )
 }

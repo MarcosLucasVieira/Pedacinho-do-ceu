@@ -9,13 +9,8 @@
 
 }
 
-@media (max-width:600px) {
-    .container{
-         display: none;}
-}
-
 .botao{
-   display: flex;
+    display: flex;
     width: 174px;
     height: 38px;
     justify-content: center;
@@ -34,3 +29,9 @@
     background-color: var(--red-bg-color-500);
     transition: 0.5s;
 }
+
+@media (max-width:768px) {
+    .container{
+         display: none;}
+}
+

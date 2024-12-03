@@ -1,0 +1,61 @@
+.swiper{
+    padding: 1rem;
+    width: 1400px;
+    height: 444px;
+}
+
+.swiper-slide{
+    display: flex;
+    justify-content: center;
+}
+
+.swiper-pagination-bullet-active{
+    background-color: var(--gray-bg-color-500);
+        width: 0.60rem;
+        height: 0.60rem;
+}
+
+.swiper-button-prev{
+    color: var(--red-bg-color-500);
+    width: 5px;
+    height: 5px;
+}
+
+.swiper-button-next{
+    color: var(--red-bg-color-500);
+}
+
+/* Estilos para tablets */
+@media (max-width: 1024px) {
+    .swiper {
+      width: 500px;
+      height: 350px; /* Ajusta altura para tablets */
+    }
+  
+    .swiper-button-prev{
+      display: none;
+    }
+    .swiper-button-next {
+      display: none;
+    }
+}
+  
+  /* Estilos para dispositivos móveis */
+@media(max-width: 600px) {
+    .swiper {
+      padding:0;  /* Reduz padding em telas menores */
+      width: 300px;
+      height: 300px;    /* Reduz a altura */
+    }
+  
+  .swiper-pagination-bullet-active {
+      width: 0.5rem;    /* Ajusta tamanho dos bullets */
+      height: 0.5rem;
+  }
+  
+    .swiper-button-prev,
+    .swiper-button-next {
+      display: none;    /* Esconde botões de navegação em telas pequenas */
+    }
+}
+
