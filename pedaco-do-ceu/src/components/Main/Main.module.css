@@ -63,13 +63,6 @@
         padding: auto;
         margin: 2rem 2rem 2rem 2rem;
     }
-    .containerCards {
-        width: 100%;
-        padding: 0;
-        margin:0;
-        align-items: center;
-        justify-content: center;
-    }
 
     .topo {
         
@@ -88,28 +81,21 @@
         height: 100vh;
         background-color: var(--white-bg-color-500);
         border-radius: 8px 8px 8px 8px ;
-        display: flex;               
         margin-left:2rem;
         flex-direction: column;      
         align-items: center;        
         justify-content: center;
-        padding: auto;
-    }
-
-    /* Ocultar outros cards quando a tela for pequena, exibindo apenas o primeiro */
-    .container .cards:not(:first-child) {
-        display: none;  /* Oculta os cards que não são o primeiro */
     }
 
     .cards img {
         width: 100%;
         height: 200px;
-        object-fit: cover;
+        object-fit: cover;   
         border-radius: 8px 8px 0 0;
     }
 
     .titulo {
-        font-size: 18px;
+        font-size: 20px;
         color: black;
         text-align: center;              /* Centraliza o texto horizontalmente */
         margin-bottom: 1rem;             /* Espaçamento abaixo do título */
@@ -118,15 +104,25 @@
     }
 
     .descricao {
-        font-size: 14px;
+        font-size: 16px;
         font-weight: 400;
         color: var(--gray-bg-color-500);
         align-items: center;
         justify-content: center; 
-        text-align: justify;
+        text-align: center;
         padding-left: 1rem;  /* Adiciona padding apenas no lado esquerdo */
         padding-right: 1rem; /* Adiciona padding apenas no lado direito */
     }
+
+    .footer{
+        color: black;
+        font-size: 18px;
+        font-weight: bold;
+        text-align: center;
+        margin-top: auto;
+    }
+
+
 }
 
 
@@ -144,7 +140,6 @@
     }
 
     .topo {
-        
         color: var(--red-bg-color-500);
         font-size: 18px;
         font-weight: bold;
@@ -165,7 +160,7 @@
         flex-direction: column;      
         align-items: center;        
         justify-content: center;
-        padding: auto;
+        padding: 0;
     }
 
     /* Ocultar outros cards quando a tela for pequena, exibindo apenas o primeiro */
@@ -197,5 +192,10 @@
         text-align: justify;
         padding-left: 1rem;  /* Adiciona padding apenas no lado esquerdo */
         padding-right: 1rem; /* Adiciona padding apenas no lado direito */
+    }
+
+    
+    .footerCards {
+        display: none;
     }
 }

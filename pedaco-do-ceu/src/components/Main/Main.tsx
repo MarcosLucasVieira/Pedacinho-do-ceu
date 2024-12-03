@@ -67,8 +67,7 @@ export function Main () {
                 <h1 className={styles.titulo}>Torta de Morango com Chocolate + 1 Refrigerantes de 2 Litros: A Dupla Irresistível!</h1>
                 <h3 className={styles.descricao}>
                     Experimente a irresistível Torta de Morango com Chocolate:
-                     camadas macias, morangos frescos e chocolate cremoso! Leve ainda
-                      2 refrigerantes de 2 litros. Sabor perfeito para compartilhar! 🍓🍫
+                     camadas macias, morangos frescos e chocolate cremoso! 
                 </h3>
                 <div className={styles.footer}> <a href=''>A Partir de R$ 79,99</a></div>
             </div>

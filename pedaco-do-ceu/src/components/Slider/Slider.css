@@ -29,7 +29,7 @@
 @media (max-width: 1024px) {
     .swiper {
       width: 500px;
-      height: 350px; /* Ajusta altura para tablets */
+      height: 500px; /* Ajusta altura para tablets */
     }
   
     .swiper-button-prev{
