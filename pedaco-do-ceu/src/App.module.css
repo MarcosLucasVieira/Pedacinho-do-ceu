@@ -3,8 +3,7 @@ body {
     background-size: cover;                    /* Faz a imagem cobrir toda a tela */
     background-position: center;               /* Centraliza a imagem */
     background-attachment: fixed;              /* Faz a imagem ficar fixa enquanto a página rola */
-    width: 100%;
-    height: 100%;                             /* Usa 100% da altura da janela de visualização */
+    width: 98.7%;                             /* Usa 100% da altura da janela de visualização */
     margin: 0;                                 /* Remove margens padrão */
     padding:0;                                /* Remove padding do body */
     display: flex;                             /* Usado para centralizar o conteúdo */
@@ -14,8 +13,7 @@ body {
 }
 
 body::after {
-    height: 100%;                               /* Garante que o pseudo-elemento ocupe toda a altura */
-    width: 100%;                                /* Garante que o pseudo-elemento ocupe toda a largura */
+    height: 110%;                               /* Garante que o pseudo-elemento ocupe toda a altura */
     content: ''; /* Cria o pseudo-elemento */
     position: absolute; /* Posiciona o pseudo-elemento sobre o body */
     top: 0;

@@ -1,15 +1,20 @@
-
 import  './App.module.css'
-import { Footer } from './components/Footer/Footer'
-import { Main } from './components/Main/Main'
+import { Main } from './pages/Main/Main'
+import { Restaurantes } from './pages/Restaurantes/Restaurantes';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+
 
 function App() {
 
  
   return (
     <>
-      <Main/>
-      <Footer/>
+     <Router>
+      <Routes>
+        <Route path='/' element={<Main/>}/>
+        <Route path='/restaurantes' element={<Restaurantes/>}/>
+      </Routes>
+     </Router>
       
     </>
   )

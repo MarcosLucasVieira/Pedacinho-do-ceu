@@ -1,8 +1,9 @@
-import { Body } from '../Body/Body'
-import { Header } from '../Header/Header'
-import { Slider, SliderProps, Slide } from '../Slider/index'
-import { SideBar } from '../SideBar/Sidebar'
+import { Body } from '../../components/Body/Body'
+import { Header } from '../../components/Header/Header'
+import { Slider, SliderProps, Slide } from '../../components/Slider/index'
+import { SideBar } from '../../components/SideBar/Sidebar'
 import styles from './Main.module.css'
+import { Footer } from '../../components/Footer/Footer'
 
 
 
@@ -75,6 +76,7 @@ export function Main () {
      </Slider>
         </div>
         <Body/>
+        <Footer/>
         </>
     )
 
